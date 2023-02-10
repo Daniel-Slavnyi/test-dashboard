@@ -1,8 +1,12 @@
 @import-normalize; /* bring in normalize.css styles */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, 'Poppins', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -12,4 +16,22 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.ant-table-thead > .ant-table-cell{
+  font-family: 'Poppins';
+font-weight: 500;
+font-size: 14px;
+line-height: calc(21/14);
+letter-spacing: -0.01em;
+color: rgba(181, 183, 192, 1);
+}
+
+.ant-pagination .ant-pagination-item-active {
+  background: rgba(89, 50, 234, 1);
+  border: transparent;
+}
+
+.ant-pagination .ant-pagination-item-active a {
+ color: white;
 }
